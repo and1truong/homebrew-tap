@@ -5,21 +5,21 @@
 class Liveboard < Formula
   desc "Markdown-powered Kanban board with real-time collaboration"
   homepage "https://github.com/and1truong/liveboard"
-  version "0.11.6"
+  version "0.11.7"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/and1truong/liveboard/releases/download/v0.11.6/liveboard_0.11.6_darwin_amd64.tar.gz"
-      sha256 "68a0b6f0c4ec5d68e2058b590e91bcfd49e09d168b2ebcf0cbe56746a59f88f2"
+      url "https://github.com/and1truong/liveboard/releases/download/v0.11.7/liveboard_0.11.7_darwin_amd64.tar.gz"
+      sha256 "b176492b1bd064b6a107df139f1d9327ae3bc82fc58237ecff32b25e1137b907"
 
       define_method(:install) do
         bin.install "liveboard"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/and1truong/liveboard/releases/download/v0.11.6/liveboard_0.11.6_darwin_arm64.tar.gz"
-      sha256 "0eb258cd3a7fb5d47859ad616d380ad0c14b7d79f925e768d21bf0dc6a6e06b4"
+      url "https://github.com/and1truong/liveboard/releases/download/v0.11.7/liveboard_0.11.7_darwin_arm64.tar.gz"
+      sha256 "57552baa290dc45cb1fad57604101c196cc24fa6358df842a715d9684d12a09e"
 
       define_method(:install) do
         bin.install "liveboard"
@@ -29,15 +29,15 @@ class Liveboard < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/and1truong/liveboard/releases/download/v0.11.6/liveboard_0.11.6_linux_amd64.tar.gz"
-      sha256 "4236a92b7eb2842825e332e24e91c70c401a37da53c98bd0bb3d4851921d84f5"
+      url "https://github.com/and1truong/liveboard/releases/download/v0.11.7/liveboard_0.11.7_linux_amd64.tar.gz"
+      sha256 "aa8cbfcf0ae22ec7d435650704578b56ade5379ed68cd07a57b954572b9ecefa"
       define_method(:install) do
         bin.install "liveboard"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/and1truong/liveboard/releases/download/v0.11.6/liveboard_0.11.6_linux_arm64.tar.gz"
-      sha256 "96b3b4cb2d1bae28afcca8fcedcbd874467c2256937a63348c1b9c5ec79f01af"
+      url "https://github.com/and1truong/liveboard/releases/download/v0.11.7/liveboard_0.11.7_linux_arm64.tar.gz"
+      sha256 "8ede6f2365bd4183419ab3fa934e01d3fa4a59a316f40e70d5225bf5f97ae313"
       define_method(:install) do
         bin.install "liveboard"
       end
